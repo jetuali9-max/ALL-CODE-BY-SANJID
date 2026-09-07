@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Learning Code</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="entry" class="entry"><div class="langs"><b>HTML</b><b>JAVA</b><b>CSS</b><b>PYTHON</b></div>
+<div class="hero"><div class="ico">&lt;/&gt;</div><h1>Learning <em>Code</em></h1><p>START YOUR CODING JOURNEY</p></div>
+<div class="entry-card"><small>ACCESS CODE</small><h2>Enter the code</h2><p>Type the code below to continue</p>
+<div class="light"><input id="pass" placeholder="ENTER CODE" autocomplete="off"></div>
+<button id="enter">ENTER <i>→</i></button><div id="entryMsg"></div></div></div>
+
+<div id="app" class="app hide"><header><button id="hamb">☰</button><strong>&lt;/&gt; Learning Code</strong><button id="musicBtn">♫</button></header>
+<aside id="drawer"><button class="close">×</button><h3>LEARNING CODE</h3><button data-v="suggest">💡 Suggest code</button><button data-v="learn">⌨️ Learn by yourself</button><button data-v="know">📊 How much you know</button><button data-v="account">👤 My account</button></aside>
+<audio id="bgMusic" preload="auto"></audio>
+<main><section class="guide"><div class="face" id="sanAvatar" title="SANJID is watching"></div><div><b id="gname">SANJID</b><p id="gtext">👀 I'm watching your code. Let's learn!</p></div><small id="gstate">Watching</small></section>
+
+<section id="suggest" class="view"><label>CODE LIBRARY</label><h1>Suggest code + demo</h1><p class="muted">Explore practical code by language.</p><nav id="tabs"></nav><div id="library"></div></section>
+
+<section id="learn" class="view active"><label>WORKSPACE</label><h1>Learn by yourself</h1><p class="muted">Real editor + live preview.</p>
+<div class="actions"><button id="swap">⇄ Swap</button><button id="fe">⛶ Editor</button><button id="fp">⛶ Preview</button><button id="reset">⌫ Clear editor</button></div>
+<div id="workspace"><div id="editorPane" class="pane"><div class="ph">CODE EDITOR <span>HTML</span></div><div class="edit"><pre id="nums">1</pre><textarea id="code" spellcheck="false"><h1>Hello SANJID</h1>
+<p>Start learning HTML!</p>
+<button onclick="alert('Nice!')">Click me</button></textarea><div id="suggestions"></div></div><footer>LIVE HTML</footer></div>
+<div id="previewPane" class="pane"><div class="ph">LIVE PREVIEW <span>● LIVE</span></div><iframe id="preview" sandbox="allow-scripts"></iframe></div></div></section>
+
+<section id="know" class="view"><label>PROGRESS</label><h1>How much you know</h1><p class="muted">Your practice is saved on this device.</p><div class="score"><strong id="pct">0%</strong><div><b id="level">Beginner</b><p id="scoreText">Explore examples and practice code.</p></div></div><div id="bars"></div></section>
+
+<section id="account" class="view"><label>PROFILE</label><h1>My account</h1><p class="muted">Customize your name, photo and SANJID.</p><div class="profile"><label class="photo"><img id="photo"><span>＋</span><input id="photoIn" type="file" accept="image/*"></label><input id="uname" placeholder="Your name"><input id="gnameIn" value="SANJID" placeholder="Guide name"><button id="save">Save profile</button></div></section>
+</main></div><script src="script.js"></script></body></html>
